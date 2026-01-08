@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,89 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control-plaintext" placeholder="input data here">
+                    </div>
+                    <div class="mb-3">
+                        <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC"
+                            title="Choose a color">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-8">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Chọn 1 file</label>
+                        <input class="form-control" type="file">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Chọn nhiều file</label>
+                        <input class="form-control" type="file" multiple disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Đầu vào file bị vô hiệu hóa</label>
+                        <input class="form-control" type="file" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+
+                    </div>
+                    <div class="mb-3">
+                        <form>
+                            <label class="form-label">Chọn trình duyệt từ danh sách:</label>
+                            <input class="form-control" list="browsers" name="browser">
+                            <datalist id="browsers">
+                                <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist>
+                        </form>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="customRange1" class="form-label">Phạm vi</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                    <div class="mb-3">
+                        <input type="range" class="form-range" step="10">
+
+                    </div>
+                    <div class="mb-3">
+                        <input type="range" class="form-range" min="0" max="4">
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
