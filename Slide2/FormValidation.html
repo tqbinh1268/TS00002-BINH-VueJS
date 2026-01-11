@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>STT - Ten</h1>
+        <div class="row">
+            <div class="col-4">
+                <form class="was-validated">
+                    <div class="mb-3 mt-3">
+                        <label for="uname" class="form-label">Họ và tên:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Nhập họ tên" required>
+                        <div class="valid-feedback">Hợp lệ</div>
+                        <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Mật khẩu:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" required>
+                        <div class="valid-feedback">Hợp lệ</div>
+                        <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                        <div class="valid-feedback">Hợp lệ</div>
+                        <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="myCheck" required>
+                        <label class="form-check-label" for="myCheck">Đồng ý với các điều khoản</label>
+                        <div class="valid-feedback">Hợp lệ</div>
+                        <div class="invalid-feedback">Tick vào hộp thoại để xác nhận</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm"></span>
+                </button>
+                <button class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm"></span> Loading..
+                </button>
+                <button class="btn btn-primary" disabled>
+                    <span class="spinner-border spinner-border-sm"></span> Loading..
+                </button>
+                <button class="btn btn-primary" disabled>
+                    <span class="spinner-grow spinner-grow-sm"></span> Loading..
+                </button>
+
+            </div>
+            <div class="col-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Apple</button>
+                    <button type="button" class="btn btn-primary">Samsung</button>
+                    <button type="button" class="btn btn-primary">Sony</button>
+                </div>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-primary">Apple</button>
+                    <button type="button" class="btn btn-primary">Samsung</button>
+                    <button type="button" class="btn btn-primary">Sony</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Apple</button>
+                    <button type="button" class="btn btn-success">Samsung</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"> Sony
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tablet</a></li>
+                            <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <br>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#aboutme">About me</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <p>Nội dung tab Home</p>
+            </div>
+            <div id="contact" class="container tab-pane fade"><br>
+                <p>Nội dung tab Contact</p>
+            </div>
+            <div id="aboutme" class="container tab-pane fade"><br>
+                <p>Nội dung tab About me</p>
+            </div>
+        </div>
+        <br><br>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Đăng nhập</button>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Đăng nhập/Đăng ký</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#dangnhap">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#dangky">Đăng Ký</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div id="dangnhap" class="container tab-pane active"><br>
+                                <form class="was-validated">
+                                    <div class="mb-3 mt-3">
+                                        <label for="uname" class="form-label">Họ và tên:</label>
+                                        <input type="text" class="form-control" id="uname" placeholder="Nhập họ tên"
+                                            required>
+                                        <div class="valid-feedback">Hợp lệ</div>
+                                        <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="pwd" class="form-label">Mật khẩu:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu"
+                                            required>
+                                        <div class="valid-feedback">Hợp lệ</div>
+                                        <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                                        <div class="valid-feedback">Hợp lệ</div>
+                                        <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="myCheck" required>
+                                        <label class="form-check-label" for="myCheck">Đồng ý với các điều khoản</label>
+                                        <div class="valid-feedback">Hợp lệ</div>
+                                        <div class="invalid-feedback">Tick vào hộp thoại để xác nhận</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div id="dangky" class="container tab-pane fade"><br>
+                                <p>Nội dung tab đăng ký</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
