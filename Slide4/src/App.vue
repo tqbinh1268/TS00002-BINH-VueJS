@@ -1,11 +1,14 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Page21 from './components/Page21.vue';
+import Page27 from './components/Page27.vue';
+import Page34 from './components/Page34.vue';
 
 </script>
 
 <template>
-  <div>
+  <Page34 msg="Test"/>
+  <!-- <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -14,7 +17,10 @@ import Page21 from './components/Page21.vue';
     </a>
   </div>
   <Page21/>
-  <HelloWorld msg="00 - Binh"/>
+  <hr>
+  <Page27/>
+  <hr>
+  <HelloWorld msg="00 - Binh"/> -->
 </template>
 
 <style scoped>
