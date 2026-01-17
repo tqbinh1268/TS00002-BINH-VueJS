@@ -7,9 +7,7 @@
     </div>
 </template>
 <script>
-defineProps({
-    msg: String,
-})
+
 export default {
 
     data() {

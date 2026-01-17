@@ -3,11 +3,12 @@ import HelloWorld from './components/HelloWorld.vue'
 import Page21 from './components/Page21.vue';
 import Page27 from './components/Page27.vue';
 import Page34 from './components/Page34.vue';
-
+import Directives from './components/Directives.vue';
 </script>
 
 <template>
-  <Page34 msg="Test"/>
+  <Directives/>
+  <!-- <Page34 msg="Test"/> -->
   <!-- <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
