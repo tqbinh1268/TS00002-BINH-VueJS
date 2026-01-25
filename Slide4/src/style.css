@@ -1,4 +1,25 @@
+/* Giữ lại các thiết lập font và color nếu bạn thích */
 :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+}
+
+/* Reset lại body để Bootstrap hoạt động đúng */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Loại bỏ giới hạn của #app */
+#app {
+  width: 100%;
+}
+
+/* Bạn có thể xóa hết các đoạn CSS còn lại nếu muốn dùng hoàn toàn style của Bootstrap */
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -76,4 +97,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
