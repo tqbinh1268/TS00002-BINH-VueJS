@@ -1,15 +1,20 @@
 <template>
-    <div class="container mt-5 col-sm-5">
+    <div class="container mt-5">
         <h2 class="mb-4">Top sách bán chạy</h2>
-        <ul class="list-group">
-            <li class="list-group-item" v-for="(product, index) in products">
-                <h4>{{ product.name }} - {{ product.price }} VNĐ</h4>
-                <button @click="toggleDetails(index)" class="btn btn-info">
-                    {{ showDetails[index] ? "Ẩn chi tiết" : "Xem chi tiết" }}
-                </button>
-                <p v-show="showDetails[index]" class="mt-2">{{ product.description }}</p>
-            </li>
-        </ul>
+        <div class="row">
+            <div class="col-sm-4 mb-4" v-for="(product, index) in products" :key="index">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ product.price }} VNĐ</h6>
+                        <button @click="toggleDetails(index)" class="btn btn-info">
+                            {{ showDetails[index] ? "Ẩn chi tiết" : "Xem chi tiết" }}
+                        </button>
+                        <p v-show="showDetails[index]" class="card-text mt-2">{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script setup>
