@@ -4,10 +4,10 @@
         <div class="row">
             <div class="col-sm-4 mb-4" v-for="(product, index) in products" :key="index">
                 <div class="card h-100">
-                    <img :src="product.image" class="card-img-top" :alt="product.name">
+                    <img :src="product.image" class="card-img-top" :alt="product.name" style="height: 300px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">{{ product.name }}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{{ product.price }} VNĐ</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ product.price.toLocaleString() }} VNĐ</h6>
                         <button @click="toggleDetails(index)" class="btn btn-info">
                             {{ showDetails[index] ? "Ẩn chi tiết" : "Xem chi tiết" }}
                         </button>
@@ -23,13 +23,13 @@ import { ref } from 'vue';
 const products = ref([
     {
         name: "Vợ Nhặt",
-        image: "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
+        image: "https://product.hstatic.net/1000237375/product/thiet_ke_chua_co_ten__81__51d105537c8544b8945d7e1eb59d57fb_master.png",
         description: "Tác phẩm 'Vợ Nhặt' của tác giả Kim Lân (1921-2007)...",
         price: 55000,
     },
     {
         name: "Chí Phèo",
-        image: "https://cdn0.fahasa.com/media/catalog/product/c/h/chi-pheo-2017.jpg",
+        image: "https://cdn1.fahasa.com/media/catalog/product/v/n/vn-11134207-7ra0g-m6nr4tgwi1k706.jpg",
         description: "Tác phẩm kiệt xuất của Nam Cao viết về bi kịch của người nông dân bị tha hóa và khát vọng lương thiện trong xã hội cũ.",
         price: 45000,
     },
