@@ -1,0 +1,138 @@
+[
+    {
+        "id": 1,
+        "name": "Nguyễn Văn An",
+        "profile": {
+            "email": "an.nguyen@example.com",
+            "job": "Frontend Developer",
+            "city": "Hà Nội",
+            "bio": "Yêu thích JavaScript và Vue.js"
+        },
+        "posts": [
+            { "id": 101, "title": "Giới thiệu Vue 3", "content": "Vue 3 mang lại hiệu năng tốt hơn và Composition API mạnh mẽ." },
+            { "id": 102, "title": "Composition API", "content": "Cách tổ chức code mới trong Vue 3 giúp tái sử dụng logic dễ dàng." }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Trần Thị Bình",
+        "profile": {
+            "email": "binh.tran@example.com",
+            "job": "UI/UX Designer",
+            "city": "TP. Hồ Chí Minh",
+            "bio": "Đam mê cái đẹp và trải nghiệm người dùng tối ưu."
+        },
+        "posts": [
+            { "id": 201, "title": "Màu sắc trong thiết kế", "content": "Cách phối màu hợp lý cho website để tăng tỷ lệ chuyển đổi." }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Lê Văn Cường",
+        "profile": {
+            "email": "cuong.le@example.com",
+            "job": "Backend Developer",
+            "city": "Đà Nẵng",
+            "bio": "Chuyên gia về Node.js và Database Optimization."
+        },
+        "posts": [
+            { "id": 301, "title": "Tối ưu truy vấn SQL", "content": "Các kỹ thuật index giúp tăng tốc database lên gấp nhiều lần." },
+            { "id": 302, "title": "RESTful API là gì?", "content": "Kiến trúc chuẩn cho việc xây dựng API giao tiếp giữa client và server." },
+            { "id": 303, "title": "Microservices", "content": "Khi nào nên sử dụng kiến trúc Microservices thay vì Monolith." }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Phạm Thị Dung",
+        "profile": {
+            "email": "dung.pham@example.com",
+            "job": "QA Engineer",
+            "city": "Cần Thơ",
+            "bio": "Đảm bảo chất lượng phần mềm là ưu tiên hàng đầu."
+        },
+        "posts": [
+            { "id": 401, "title": "Automation Testing", "content": "Sử dụng Selenium để kiểm thử tự động giao diện web." }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Hoàng Văn Em",
+        "profile": {
+            "email": "em.hoang@example.com",
+            "job": "Mobile Developer",
+            "city": "Hải Phòng",
+            "bio": "Flutter và React Native fanboy."
+        },
+        "posts": [
+            { "id": 501, "title": "Flutter vs React Native", "content": "So sánh ưu nhược điểm của 2 framework cross-platform phổ biến nhất." },
+            { "id": 502, "title": "Dart cơ bản", "content": "Ngôn ngữ lập trình đằng sau sức mạnh của Flutter." }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Vũ Thị Phương",
+        "profile": {
+            "email": "phuong.vu@example.com",
+            "job": "Business Analyst",
+            "city": "Nha Trang",
+            "bio": "Cầu nối giữa khách hàng và đội ngũ kỹ thuật."
+        },
+        "posts": [
+            { "id": 601, "title": "Kỹ năng giao tiếp", "content": "Làm sao để lấy yêu cầu (elicitation) hiệu quả từ khách hàng khó tính." }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Đặng Văn Giang",
+        "profile": {
+            "email": "giang.dang@example.com",
+            "job": "Project Manager",
+            "city": "Hà Nội",
+            "bio": "Quản lý dự án theo mô hình Agile/Scrum."
+        },
+        "posts": [
+            { "id": 701, "title": "Quản lý rủi ro", "content": "Nhận diện và xử lý rủi ro trong dự án phần mềm sớm nhất có thể." },
+            { "id": 702, "title": "Scrum Master", "content": "Vai trò của Scrum Master trong việc vận hành team hiệu quả." }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Bùi Thị Hạnh",
+        "profile": {
+            "email": "hanh.bui@example.com",
+            "job": "Digital Marketer",
+            "city": "TP. Hồ Chí Minh",
+            "bio": "SEO, Content Marketing và Social Media."
+        },
+        "posts": [
+            { "id": 801, "title": "SEO On-page", "content": "Tối ưu hóa nội dung trên trang web để thân thiện với Google." }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Ngô Văn Hùng",
+        "profile": {
+            "email": "hung.ngo@example.com",
+            "job": "DevOps Engineer",
+            "city": "Đà Lạt",
+            "bio": "Docker, Kubernetes và CI/CD Automation."
+        },
+        "posts": [
+            { "id": 901, "title": "Docker cho người mới", "content": "Containerization ứng dụng với Docker giúp môi trường đồng nhất." },
+            { "id": 902, "title": "CI/CD Pipeline", "content": "Tự động hóa quy trình build, test và deploy code." }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Lý Thị Lan",
+        "profile": {
+            "email": "lan.ly@example.com",
+            "job": "Content Creator",
+            "city": "Vũng Tàu",
+            "bio": "Sáng tạo nội dung video và bài viết viral."
+        },
+        "posts": [
+            { "id": 1001, "title": "Kịch bản Video", "content": "Cách viết kịch bản video thu hút người xem trong 3 giây đầu." }
+        ]
+    }
+]
