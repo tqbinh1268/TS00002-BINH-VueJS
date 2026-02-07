@@ -4,7 +4,7 @@ import { useRoute } from 'vue-router';
 import users from '../users.json';
 
 const route = useRoute();
-const user = computed(() => users.find(u => u.id == route.params.id));
+const user = computed(() => users.users.find(u => u.id == route.params.id));
 </script>
 
 <template>
