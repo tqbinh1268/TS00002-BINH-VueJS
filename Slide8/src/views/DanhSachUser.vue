@@ -1,19 +1,19 @@
 <template>
-    <div class="card">
-        <div class="card-header">
-            <h5 class="mb-0">Danh sách User</h5>
-        </div>
-        <div class="list-group list-group-flush">
-            <div v-for="user in users.users" :key="user.id" 
-                 class="list-group-item d-flex justify-content-between align-items-center"
-                 :class="{ 'active-user': isActive(user.id) }">
-                <div class="d-flex align-items-center">
-                    <img :src="user.image" alt="Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
-                    <span><strong>ID: {{ user.id }}</strong> - {{ user.name }}</span>
-                </div>
-                <div>
-                    <RouterLink :to="`/user/${user.id}/profile`" class="btn btn-outline-primary btn-sm me-1">Profile</RouterLink>
-                    <RouterLink :to="`/user/${user.id}/posts`" class="btn btn-outline-success btn-sm">Posts</RouterLink>
+    <div class="container mt-3">
+        <h5 class="mb-4 text-center">Danh sách User</h5>
+        <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"> -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" v-for="user in users.users" :key="user.id">
+                <div class="card h-100 shadow user-card" :class="{ 'border-primary bg-light': isActive(user.id) }">
+                    <img :src="user.image" class="card-img-top" :alt="user.name" style="height: 150px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary fw-bold">{{ user.name }}</h5>
+                        <p class="card-text text-muted">ID: <span class="badge bg-secondary">{{ user.id }}</span></p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <RouterLink :to="`/user/${user.id}/profile`" class="btn btn-primary btn-sm">Profile</RouterLink>
+                            <RouterLink :to="`/user/${user.id}/posts`" class="btn btn-success btn-sm">Posts</RouterLink>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,9 +31,11 @@ const isActive = (id) => route.params.id == id;
 </script>
 
 <style scoped>
-.list-group-item { margin-bottom: 5px; }
-.active-user {
-    background-color: #e9ecef;
-    border-left: 4px solid #0d6efd;
+.user-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
 }
 </style>
